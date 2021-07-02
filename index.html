@@ -8,20 +8,21 @@
     <title>Landing Page</title>
   </head>
   <body>
+
     <header id="header" class="sticky">
       <nav id="nav-bar" >
         <img
           id="header-img"
-          src="https://img1.pnghut.com/10/23/23/hCn9TJxCjm/business-amazoncom-logo-merino-body-jewelry.jpg"
+          src="./pngaaa.com-4305350.png"
           alt="header pic"
         />
         <ul>
           <li class="nav-link"><a  href="#footer">Contact</a></li>
+          <li class="nav-link"><a  href="#products">Products</a></li>
           <li class="nav-link"><a  href="#features">Features</a></li>
           <li class="nav-link"><a  href="#video">Video</a></li>
         </ul>
       </nav>
-    
     </header>
 
     <div id="video">
@@ -38,37 +39,26 @@
       ></iframe>
     </div>
 
-    <div class="form-div">
-        <h2 class="header-text">Add your email for a chance to win</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <input
-            id="email"
-            type="text"
-            placeholder="Please enter your email address"
-            required
-          />
-          <button id="submit" type="submit">Submit</button>
-        </form>
-      </div>
+    <hr>
 
 <div id="features">
-    <h2 id="feature-header">Features</h2>
-    <div class="featureOne">
-        <i class="fas fa-dumbbell fa-5x feature-icon"></i>
+    
+    <div class="feature">
+        <i class="fas fa-dumbbell fa-6x feature-icon"></i>
         <div class="feature-text">
         <h4>More Distance On Your Drives</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti nisi soluta quaerat. Est ratione expedita accusantium rerum nulla dolores, architecto laboriosam cupiditate tempore, assumenda aut eveniet repudiandae provident minima voluptatem? Exercitationem, soluta labore, ea aperiam iste quo eligendi et sequi cumque enim corrupti veritatis, voluptate debitis laborum quae voluptatibus?</p>
     </div>
     </div>
-    <div class="featureOne">
-        <i class="fas fa-wind fa-5x feature-icon"></i>
+    <div class="feature">
+        <i class="fas fa-wind fa-6x feature-icon"></i>
         <div class="feature-text">
         <h4>Where Wind Meets Your Disc's Numbers</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti nisi soluta quaerat. Est ratione expedita accusantium rerum nulla dolores, architecto laboriosam cupiditate tempore, assumenda aut eveniet repudiandae provident minima voluptatem? Exercitationem, soluta labore, ea aperiam iste quo eligendi et sequi cumque enim corrupti veritatis, voluptate debitis laborum quae voluptatibus?</p>
     </div>
     </div>
-    <div class="featureOne">
-        <i class="fas fa-level-up-alt fa-5x feature-icon"></i>
+    <div class="feature">
+        <i class="fas fa-level-up-alt fa-6x feature-icon"></i>
         <div class="feature-text">
         <h4>Level Up Your Putts</h4>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis corrupti nisi soluta quaerat. Est ratione expedita accusantium rerum nulla dolores, architecto laboriosam cupiditate tempore, assumenda aut eveniet repudiandae provident minima voluptatem? Exercitationem, soluta labore, ea aperiam iste quo eligendi et sequi cumque enim corrupti veritatis, voluptate debitis laborum quae voluptatibus?</p>
@@ -76,19 +66,55 @@
     </div>
     
 </div>
+
+<hr>
+<h2 class="productH2">Products</h2>
+
+<div id="products">
+  
+  <div class="item">
+    <h4>Cool disc</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae temporibus aspernatur?</p>
+    <img class="item-img" src="https://www.innovadiscs.com/wp-content/uploads/2017/06/star-mystere_pink.jpg" alt="cool disc">
+  </div>
+  <div class="item">
+    <h4>Cool disc</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae temporibus aspernatur?</p>
+    <img class="item-img" src="https://www.innovadiscs.com/wp-content/uploads/2017/06/star-mystere_pink.jpg" alt="cool disc">
+  </div>
+  <div class="item">
+    <h4>Cool disc</h4>
+    <p class="item-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quae temporibus aspernatur?</p>
+    <img class="item-img" src="https://www.innovadiscs.com/wp-content/uploads/2017/06/star-mystere_pink.jpg" alt="cool disc">
+  </div>
+  
+</div>
+
+<hr>
+
+<div id="contact">
+  <h2>Contact</h2>
+  <form action="mailto:sethastephens8@gmail.com" method="post" enctype="text/plain">
+      <br>
+      <input type="text" name="name" placeholder="name"><br>
+      <br>
+      <input type="text" name="mail" placeholder="email"><br>
+      <br>
+      <textarea type="textarea" name="comment" rows="4" cols="50" placeholder="Comment here"></textarea><br><br>
+      <button type="submit">Send</button>
+      </form>
+
+</div>
+
 <footer id="footer">
-    <h1>Contact</h1>
-    <form action="mailto:sethastephens8@gmail.com" method="post" enctype="text/plain">
-        <br>
-        <input type="text" name="name" placeholder="name"><br>
-        <br>
-        <input type="text" name="mail" placeholder="email"><br>
-        <br>
-        <textarea type="textarea" name="comment" rows="4" cols="50" placeholder="Comment here"></textarea><br><br>
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
-        </form>
+    <p id="footerP"></p>
 </footer>
+
+<script>
+  let date = new Date();
+  let year = date.getFullYear();
+  document.getElementById("footerP").innerHTML = "Copyright Seth the Dev " + year;
+</script>
 
   </body>
 </html>
